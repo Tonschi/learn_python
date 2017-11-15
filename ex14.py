@@ -1,23 +1,22 @@
-# -*- coding:utf-8 -*-
-
 from sys import argv
 
-script, userName = argv
-prompt = '>'
+script, user_name = argv
 
-print "Hi %s, I'm the %sscript." % (userName, script)
-print "I'd like to ask you a few questions."
-print "Do you like me %s?" % userName
-likes = raw_input (prompt)
+prompt = "=> "
 
-print "Where do you live %s?" % userName
-lives = raw_input (prompt)
+print ("Hi {}, I'm the {} script.".format(user_name, script))
+print ("I'd like to ask you a few questions.")
+print ("Do you like me {}?".format(user_name))
+likes = input(prompt)
 
-print "What kind of computer do you have?"
-computer = raw_input (prompt)
+print (f"Where do you live {user_name}")
+lives = input(prompt)
 
-print """
-Alright, do you said %r about liking me.
-You life in %r. Not sure where that it.
-And you have a %r computer. Nice!
-""" % (likes, lives, computer)
+print ("What kind of computer do you have?")
+computer = input(prompt)
+
+print (f"""
+Alright, so you said {likes} about liking me.
+You live in {lives}. Not sure where that is.
+And you have a {computer} computer. Nice, I guess.
+""")
