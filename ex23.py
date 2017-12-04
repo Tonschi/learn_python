@@ -1,6 +1,4 @@
-# ex23.py
-
-import sys
+import sys # ex23.py
 script, encoding, error = sys.argv
 
 def main(language_file, encoding, errors):
